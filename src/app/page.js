@@ -13,7 +13,7 @@ export default async function Home() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 my-8">
         {
-          posts.map(post => <HomeCard key={post.id} title={post.title}></HomeCard>)
+          posts.map(post => <HomeCard key={post.id} post={post}></HomeCard>)
         }
       </div>
     </div>
