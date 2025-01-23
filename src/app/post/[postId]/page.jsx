@@ -8,7 +8,7 @@ const PostDetails = async ({ params }) => {
    const { data: post } = await axios(`https://jsonplaceholder.typicode.com/posts/${postId}`)
    console.log(post)
    return (
-      <div className='w-11/12 mx-auto 2xl:container my-8'>
+      <div className='w-11/12 mx-auto 2xl:container my-8 2xl:min-h-screen min-h-[400px]'>
          <div className="card bg-base-100 max-w-2xl mx-auto shadow-xl">
             <div className="card-body">
                <p>User ID: { post.userId}</p>

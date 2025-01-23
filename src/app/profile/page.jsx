@@ -12,7 +12,7 @@ const Profile = async () => {
       redirect("/api/auth/login?post_login_redirect_url=/profile")
    }
    return (
-      <div className='text-center my-8'>
+      <div className='text-center my-8 2xl:min-h-screen min-h-[400px]'>
          <h1 className='text-3xl font-bold'>
             {
                `Welcome to your profile page, ${user?.given_name} ${user?.family_name} !`
